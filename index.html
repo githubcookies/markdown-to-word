@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 转 Word 工具</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown 转 Word 工具</h1>
+        <div class="converter">
+            <div class="editor-container">
+                <div class="input-area">
+                    <h2>Markdown 输入</h2>
+                    <textarea id="mdInput" placeholder="在此输入 Markdown 内容..."></textarea>
+                </div>
+                <div class="preview-area">
+                    <h2>实时预览</h2>
+                    <div id="preview" class="preview-content"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="uploadBtn">上传 Markdown 文件</button>
+                <button id="convertBtn">转换为 Word</button>
+                <input type="file" id="fileInput" accept=".md,.txt" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
