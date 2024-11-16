@@ -1,0 +1,9 @@
+# 自动处理换行符
+* text=auto
+
+# 对特定文件指定换行符
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf 
